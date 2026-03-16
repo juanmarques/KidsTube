@@ -43,6 +43,8 @@ A safe, toddler-friendly YouTube viewing app for Android. Designed specifically 
 
 ## Architecture
 
+[\![Architecture Diagram](https://img.shields.io/badge/View_Architecture-Excalidraw-6965db?style=for-the-badge&logo=excalidraw)](https://excalidraw.com/#json=hwO8exQ70hPljnfoe1dSF,XjCcm7PYowBJ4vvkbxyFzw)
+
 KidsTube follows Clean Architecture with a multi-module structure:
 
 ```
