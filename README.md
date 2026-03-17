@@ -14,18 +14,17 @@ A safe, toddler-friendly YouTube viewing app for Android. Designed specifically 
 - **Bright, cheerful theme** - Engaging colors kids love
 
 ### Smart Content Curation
-- **Dutch-focused content** - Prioritizes Dutch-language kids videos
-- **Priority channels** - Features popular kids creators:
-  - Steve and Maggie
-  - Vlad & Niki
-  - Diana & Roma
-  - Like Nastya
-  - Ryan's World
-  - A for Adley
-- **Classic Dutch shows** - Juf Roos, Bumba, Kabouter Plop, Peppa Pig NL, Paw Patrol NL, and more
-- **Diverse categories** - Cartoons, educational, music, dance, animals, vehicles
-- **Shuffled feed** - Content reshuffles on scroll to keep things fresh
-- **6-hour cache** - Minimizes YouTube API usage
+- **Multi-language support** - 12 languages: Dutch, English, Spanish, Portuguese, French, German, Russian, Arabic, Japanese, Korean, Hindi, Turkish
+- **40+ curated channels** - Free RSS feeds (zero API quota), including:
+  - English: CoComelon, Peppa Pig, Paw Patrol, Blippi, Super Simple Songs, BabyBus, and more
+  - Spanish: El Reino Infantil, Cleo y Cuquin, Pocoy&oacute;
+  - Portuguese: Galinha Pintadinha, Turma da M&ocirc;nica
+  - French: Monde des Titounis, Trotro
+  - Multilingual: Hey Bear Sensory, Teletubbies
+- **Channel allowlist** - 40+ known kids channels whitelisted regardless of YouTube's "madeForKids" flag
+- **Shuffled feed** - Content reshuffles on pull-to-refresh
+- **Hybrid quota strategy** - RSS feeds (free, unlimited) for browsing + YouTube API (quota-tracked) for search only
+- **6-hour search cache** - Minimizes YouTube API usage, stays under 10,000 unit daily limit
 
 ### Video Player
 - **Full-screen playback** - No distractions
@@ -161,35 +160,19 @@ feature/
 | `feature-parental` | Settings, PIN entry |
 | `feature-onboarding` | First-run setup |
 
-## Content Categories
+## Curated Channels by Language
 
-### Priority (Real Kids Channels)
-- Steve and Maggie Nederlands
-- Vlad en Niki Nederlands
-- Diana en Roma Nederlands
-- Like Nastya Nederlands
-- Ryan's World Nederlands
-- Kids Diana Show Nederlands
-- A for Adley
+| Language | Channels | Examples |
+|----------|----------|---------|
+| English | 23 | CoComelon, Peppa Pig, Paw Patrol, Blippi, Super Simple Songs, BabyBus, Sesame Street |
+| Spanish | 4 | El Reino Infantil, Cleo y Cuquin, Pocoy&oacute;, La Granja de Zen&oacute;n |
+| Portuguese | 3 | Galinha Pintadinha, Turma da M&ocirc;nica, Mundo Bita |
+| French | 2 | Monde des Titounis, Trotro |
+| German | 1 | KiKA |
+| Other | 6 | Russian, Arabic, Japanese, Korean, Hindi, Turkish (1 each) |
+| Multilingual | 2 | Hey Bear Sensory, Teletubbies |
 
-### Dutch Shows
-- Juf Roos, Bumba, Kabouter Plop
-- Woezel & Pip, Nijntje
-- Masha en de Beer, Peppa Pig NL
-- Paw Patrol NL, Bing NL
-- Sesamstraat, Het Zandkasteel
-- Maya de Bij, K3, Mini Disco
-- CoComelon NL, Blippi NL
-- Disney Junior NL, Efteling
-
-### General Categories
-- Tekenfilms (Cartoons)
-- Kinderliedjes (Kids songs)
-- Leren (Educational)
-- Dieren (Animals)
-- Speelgoed (Toys)
-- Dansen (Dance)
-- Voertuigen (Vehicles)
+Content is fetched via free RSS feeds (no API quota) and supplemented with YouTube API search (quota-tracked, cached 6 hours).
 
 ## API Quota Management
 
