@@ -1,5 +1,7 @@
 # KidsTube
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A safe, toddler-friendly YouTube viewing app for Android. Designed specifically for young children (ages 1-4), KidsTube provides a distraction-free, curated video experience with large touch targets and parental controls.
 
 ## Features
